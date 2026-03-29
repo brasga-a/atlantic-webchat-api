@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(pip install:*)",
+      "Bash(echo \"Exit: $?\")",
+      "Bash(python -m pip install psycopg2-binary)",
+      "Bash(find /c/Users/bradr/Estudos/python/chat/web -type f -name *.ts -o -name *.tsx -o -name *.js -o -name *.jsx)",
+      "Bash(find c:UsersbradrEstudospythonchatwebsrc -type f \\\\\\(-name *.tsx -o -name *.ts \\\\\\))",
+      "Bash(find \"c:\\\\Users\\\\bradr\\\\Estudos\\\\python\\\\chat\\\\web\\\\src\\\\app\\\\\\(app\\)\\\\chat\" -type f)",
+      "Bash(find \"c:\\\\Users\\\\bradr\\\\Estudos\\\\python\\\\chat\\\\web\\\\src\\\\app\\\\\\(app\\)\\\\chat\" -type f -o -type d)",
+      "Bash(find \"c:\\\\Users\\\\bradr\\\\Estudos\\\\python\\\\chat\\\\web\\\\src\\\\app\\\\\\(app\\)\" -type f)",
+      "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/chat/\")",
+      "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/chat/[id]/\")",
+      "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/\")",
+      "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/profile/\")",
+      "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/settings/\")",
+      "Bash(npx next:*)",
+      "Bash(grep -r \"verify-username\\\\|verifyUsername\" c:UsersbradrEstudospythonchatwebsrc --include=*.ts --include=*.tsx)"
+    ]
+  }
+}
