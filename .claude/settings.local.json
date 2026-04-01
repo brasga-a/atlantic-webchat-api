@@ -18,7 +18,14 @@
       "Bash(npx next:*)",
       "Bash(grep -r \"verify-username\\\\|verifyUsername\" c:UsersbradrEstudospythonchatwebsrc --include=*.ts --include=*.tsx)",
       "Bash(cat /c/Users/bradr/Estudos/python/chat/web/.env*)",
-      "Bash(python -c \"from cryptography.fernet import Fernet; print\\(Fernet.generate_key\\(\\).decode\\(\\)\\)\")"
+      "Bash(python -c \"from cryptography.fernet import Fernet; print\\(Fernet.generate_key\\(\\).decode\\(\\)\\)\")",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch .env\" --prune-empty -- --all)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git apply:*)",
+      "Bash(grep -l \"ArrowLeft\" c:/Users/bradr/Estudos/python/chat/web/src/app/\\\\\\(app\\\\\\)/chat/[id]/page.tsx c:/Users/bradr/Estudos/python/chat/web/src/app/\\\\\\(app\\\\\\)/profile/page.tsx c:/Users/bradr/Estudos/python/chat/web/src/app/\\\\\\(app\\\\\\)/settings/page.tsx)",
+      "Bash(git push:*)"
     ]
   }
 }
