@@ -235,4 +235,4 @@ def handle_delete_message(data):
 
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=os.getenv("FLASK_DEBUG", "false").lower() == "true")
