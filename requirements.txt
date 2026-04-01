@@ -12,3 +12,5 @@ bcrypt
 psycopg2-binary
 python-dotenv
 flask-cors
+gunicorn
+eventlet
