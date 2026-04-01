@@ -6,3 +6,5 @@ class Chat(db.Model):
     name = db.Column(db.String(120), nullable=True)  # For group chats
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
+
+    members = db.relationship('ChatMember', backref='chat', lazy='dynamic')

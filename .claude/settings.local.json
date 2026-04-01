@@ -16,7 +16,9 @@
       "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/profile/\")",
       "Bash(ls \"c:/Users/bradr/Estudos/python/chat/web/src/app/\\(app\\)/settings/\")",
       "Bash(npx next:*)",
-      "Bash(grep -r \"verify-username\\\\|verifyUsername\" c:UsersbradrEstudospythonchatwebsrc --include=*.ts --include=*.tsx)"
+      "Bash(grep -r \"verify-username\\\\|verifyUsername\" c:UsersbradrEstudospythonchatwebsrc --include=*.ts --include=*.tsx)",
+      "Bash(cat /c/Users/bradr/Estudos/python/chat/web/.env*)",
+      "Bash(python -c \"from cryptography.fernet import Fernet; print\\(Fernet.generate_key\\(\\).decode\\(\\)\\)\")"
     ]
   }
 }
