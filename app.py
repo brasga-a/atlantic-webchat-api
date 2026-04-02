@@ -29,6 +29,8 @@ db_url = os.getenv("DATABASE_URL")
 frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
 app = Flask(__name__)
+from werkzeug.middleware.proxy_fix import ProxyFix
+app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
 CORS(app, origins=frontend_url, supports_credentials=True)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
