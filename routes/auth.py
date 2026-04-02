@@ -64,7 +64,7 @@ def register():
 
         hashed_password = hashpw(str.encode(password), gensalt()).decode('utf-8')
 
-        new_user = User(id=str(uuid.uuid7()), username=username, email=email, password=hashed_password)
+        new_user = User(id=str(uuid.uuid4()), username=username, email=email, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
 

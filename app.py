@@ -1,5 +1,5 @@
-import eventlet
-eventlet.monkey_patch()
+from gevent import monkey
+monkey.patch_all()
 
 from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS
@@ -132,7 +132,7 @@ def handle_send_message(data):
     import uuid
     encrypted_content = encrypt_message(content)
     message = Message(
-        id=str(uuid.uuid7()),
+        id=str(uuid.uuid4()),
         chat_id=chat_id,
         sender_id=current_user.id,
         content=encrypted_content,
@@ -224,7 +224,7 @@ def handle_delete_message(data):
         existing = MessageDeletion.query.filter_by(message_id=message_id, user_id=current_user.id).first()
         if not existing:
             deletion = MessageDeletion(
-                id=str(uuid.uuid7()),
+                id=str(uuid.uuid4()),
                 message_id=message_id,
                 user_id=current_user.id,
             )

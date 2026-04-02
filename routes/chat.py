@@ -45,11 +45,11 @@ def create_chat():
         if other_member:
             return jsonify({"message": "Chat already exists.", "chat_id": c.id}), 200
 
-    new_chat = Chat(id=str(uuid.uuid7()), type="private")
+    new_chat = Chat(id=str(uuid.uuid4()), type="private")
     db.session.add(new_chat)
 
-    member1 = ChatMember(id=str(uuid.uuid7()), chat_id=new_chat.id, user_id=current_user.id)
-    member2 = ChatMember(id=str(uuid.uuid7()), chat_id=new_chat.id, user_id=other_user.id)
+    member1 = ChatMember(id=str(uuid.uuid4()), chat_id=new_chat.id, user_id=current_user.id)
+    member2 = ChatMember(id=str(uuid.uuid4()), chat_id=new_chat.id, user_id=other_user.id)
 
     db.session.add(member1)
     db.session.add(member2)
