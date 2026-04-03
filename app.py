@@ -40,6 +40,7 @@ app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
     'pool_pre_ping': True,
 }
 app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
+app.config['SESSION_COOKIE_DOMAIN'] = '.atlantichq.dev'
 app.config['SESSION_COOKIE_SAMESITE'] = 'None'
 app.config['SESSION_COOKIE_SECURE'] = True
 app.config['SESSION_COOKIE_HTTPONLY'] = True
